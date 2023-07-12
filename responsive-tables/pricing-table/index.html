@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de Preços</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Escolha Seu Plano</h1>
+      <div class="toggle">
+        <label>Anual</label>
+        <div class="toggle-btn">
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <label for="checkbox" class="sub" id="suv">
+            <div class="circle"></div>
+          </label>
+        </div>
+        <label>Mensal</label>
+      </div>
+    </header>
+
+    <!-- cards -->
+    <div class="cards">
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Básico</li>
+          <li id="basic" class="price bottom-bar">R$ 129.99</li>
+          <li class="bottom-bar">5600 GB de Armazenamento</li>
+          <li class="bottom-bar">2 Usuários Permitidos</li>
+          <li class="bottom-bar">Envie até 3 GB</li>
+          <li>
+            <button class="btn">Saiba mais</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card active">
+        <ul>
+          <li class="pack">Profissional</li>
+          <li id="basic" class="price bottom-bar">R$ 199.99</li>
+          <li class="bottom-bar">1 TB de Armazenamento</li>
+          <li class="bottom-bar">5 Usuários Permitidos</li>
+          <li class="bottom-bar">Envie até 10 GB</li>
+          <li>
+            <button class="btn active-btn">Saiba mais</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Master</li>
+          <li id="basic" class="price bottom-bar">R$ 299.99</li>
+          <li class="bottom-bar">2 TB de Armazenamento</li>
+          <li class="bottom-bar">10 Usuários Permitidos</li>
+          <li class="bottom-bar">Envie até 20 GB</li>
+          <li>
+            <button class="btn">Saiba mais</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
