@@ -12,7 +12,7 @@ Projeto de uma tabela de preços, que possui três planos diferentes (Básico, P
   <img src=".github/preview.png" width="100%">
 </p>
 
- <h2 align="center"><a href="https://isadoraguiar.github.io/simple-projects/responsive-tables/pricing-table" target="_blank">Projeto ao vivo</a></h2>
+ <h2 align="center"><a href="https://isadoraguiar.github.io/projects/responsive-tables/pricing-table" target="_blank">Projeto ao vivo</a></h2>
 
 ### 🚀 Tecnologias
 

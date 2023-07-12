@@ -12,7 +12,7 @@ Projeto de uma tabela simples com responsividade. <br/>
   <img src=".github/preview.png" width="100%">
 </p>
 
- <h2 align="center"><a href="https://isadoraguiar.github.io/simple-projects/responsive-tables/simple-table" target="_blank">Projeto ao vivo</a></h2>
+ <h2 align="center"><a href="https://isadoraguiar.github.io/projects/responsive-tables/simple-table" target="_blank">Projeto ao vivo</a></h2>
 
 ### 🚀 Tecnologias
 
