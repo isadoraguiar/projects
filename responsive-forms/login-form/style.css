@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #e6e6e6;
+
+  overflow: hidden;
+}
+
+::selection {
+  background: rgba(125, 39, 131, 0.4);
+}
+
+.container {
+  max-width: 44rem;
+  padding: 0 2rem;
+  margin: 17rem auto;
+}
+
+.wrapper {
+  width: 100%;
+  background: white;
+  border-radius: 0.5rem;
+
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+
+.wrapper .title {
+  height: 9rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  background: #b05aca;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.wrapper form {
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+}
+
+.wrapper form .field {
+  height: 4.5rem;
+  margin-bottom: 1.5rem;
+  
+  position: relative;
+}
+
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+
+  outline: none;
+  border-radius: 0.5rem;
+  border: 1px solid lightgrey;
+
+  padding-left: 6rem;
+
+  transition: all 0.4s ease;
+}
+
+.wrapper form .field input:focus {
+  border-color: #b05aca;
+  box-shadow: inset 0px 0px 2px 2px rgba(209, 102, 219, 0.25);
+}
+
+.wrapper form .field::placeholder {
+  color: #9c9c9c;
+}
+
+.wrapper form .field i {
+  position: absolute;
+  width: 4.7rem;
+  height: 100%;
+
+  font-size: 1.8rem;
+  color: white;
+  background: #b05aca;
+
+  border: 1px solid #b05aca; 
+  border-radius: 0.5rem 0 0 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form .pass {
+  margin: -0.8rem 0 2rem 0;
+}
+
+.wrapper form .pass a {
+  color: #b05aca;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+  text-decoration: underline;
+}
+
+.wrapper form .button input {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+
+  background: #b05aca;
+  border: 1px solid #b05aca;
+  padding-left: 0;
+  
+  cursor: pointer;
+}
+
+.wrapper form .button input:hover {
+  background: #8d48a1;
+}
+
+.wrapper form .signup-link {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.wrapper form .signup-link a {
+  color: #b05aca;
+  text-decoration: none;
+}
+
+.wrapper form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+
