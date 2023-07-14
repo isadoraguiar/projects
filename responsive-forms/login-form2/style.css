@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --base-color: linear-gradient(to right, #01856c 0%, #00e4ba 100%);
+  --base-color-left: linear-gradient(to left, #01856c 0%, #00e4ba 100%);
+  --color-selection: #00dab2; 
+
+  font-size: 62.5%;
+}
+
+html, body {
+  font-size: 1.6rem;
+
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+  background: var(--base-color);
+}
+
+::selection {
+  background: var(--color-selection);
+}
+
+.container {
+  max-width: 35rem;
+  width: 100%;
+  background: white;
+  padding: 2.5rem 3rem;
+  border-radius: 0.5rem;
+  
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container form .title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  
+  position: relative;
+}
+
+.container form .input-wrapper {
+  width: 100%;
+  height: 4.5rem;
+  margin-top: 2.5rem;
+
+  position: relative;
+}
+
+.container form .input-wrapper input {
+  width: 100%;
+  height: 100%;
+  
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.container form .underline::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #d1d1d1;
+  left: 0;
+  bottom: 0;
+}
+
+.container form .underline::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--base-color);
+  left: 0;
+  bottom: 0;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: all 0.3s ease;
+}
+
+.container form .input-wrapper input:focus ~ .underline::after,
+.container form .input-wrapper input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container form .button {
+  margin: 4rem 0 2rem 0;
+}
+
+.container .input-wrapper input[type="submit"] {
+  background: var(--base-color);
+  font-size: 1.7rem;
+  color: white;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.container .input-wrapper input[type="submit"]:hover {
+  letter-spacing: 1px;
+  background: var(--base-color-left);
+}
+
+.container .option {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.container .twitter a,
+.container .facebook a {
+  display: block;
+  height: 4.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-left: 2rem;
+  line-height: 4.5rem;
+  color: white;
+  border-radius: 0.5rem;
+
+  transition: all 0.3s ease;
+}
+
+.container .twitter i,
+.container .facebook i {
+  padding-right: 1.2rem;
+  font-size: 2rem;
+}
+
+.container .twitter a {
+  background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+  margin: 2rem 0 1.5rem 0;
+}
+
+.container .twitter a:hover {
+  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+}
+
+.container .facebook a {
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: 2rem 0 5rem 0;
+}
+
+.container .facebook a:hover {
+  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+}
