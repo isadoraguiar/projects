@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #151518;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+::selection {
+  background: #7438ff;
+}
+
+.container {
+  background-color: #333338;
+  padding: 3rem 4rem;
+  min-width: min(90%, 47rem);
+  color: #efefef;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  padding: 2rem 0;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.input-field input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #7438ff;
+  border-radius: 2px;
+  padding: 0.5rem;
+  color: white;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-bottom: 3px solid #7438ff;
+}
+
+#generate {
+  background-color: #7438ff;
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  margin: 2rem 0;
+  color: white;
+  font-size: 1.8rem;
+
+  cursor: pointer;
+}
+
+#result {
+  font-size: 5rem;
+}
+
+
+@media (min-width: 520px) {
+  .container h2 {
+    font-size: 3rem;
+  }
+
+  .input-group {
+    flex-direction: row;
+    gap: 5rem;
+    text-align: left;
+  }
+}
