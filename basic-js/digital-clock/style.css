@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: #070606;
+  color: white;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  min-width: min(90%, 55rem);
+}
+
+.timer div {
+  width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 0.2rem;
+}
+
+.timer span {
+  font-weight: 500;
+  font-size: 4.5rem;
+}
+
+.timer span.time {
+  font-size: 1rem;
+}
+
+@media (min-width: 480px) {
+  .timer {
+    gap: 4rem;
+  }
+
+  .timer span {
+    font-size: 5.5rem;
+  }
+  
+  .timer span.time {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .timer {
+    gap: 6rem;
+  }
+
+  .timer div {
+    letter-spacing: 0.3rem;
+  }
+
+  .timer span {
+    font-size: 6rem;
+  }
+  
+  .timer span.time {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .timer {
+    gap: 8rem;
+  }
+
+  .timer span {
+    font-size: 8rem;
+  }
+  
+  .timer span.time {
+    font-size: 1.7rem;
+  }
+}
+
