@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  touch-action: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+
+  background: #8d46eb;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: min(90%, 65rem);
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 3rem 3rem 2.5rem;
+}
+
+.container .content {
+  margin: 3.5rem 0;
+}
+
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+
+.content .quote-area i {
+  font-size: 1.5rem;
+}
+
+.content .quote-area i:first-child {
+  margin: 0.3rem 1rem 0 0;
+}
+
+.content .quote-area i:last-child {
+  margin: 0 0 0.3rem 1rem;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.content .quote-area .quote {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.content .author {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 2rem;
+
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.content .author span:first-child {
+  margin: -0.6rem 0.5rem 0 0;
+  font-family: monospace;
+}
+
+.container .buttons {
+  border-top: 1px solid #ccc;
+}
+
+.buttons .features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin-top: 2rem;
+}
+
+.features ul {
+  display: flex;
+}
+
+.features ul li {
+  list-style: none;
+  color: #8d46eb;
+  margin: 0 0.5rem;
+
+  height: 4.7rem;
+  width: 4.7rem;
+
+  border: 2px solid #8d46eb;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+  color: white;
+  background: #8d46eb;
+}
+
+.features button {
+  border: none;
+  outline: none;
+  padding: 1.3rem 2.2rem;
+  border-radius: 3rem;
+  
+  background: #8d46eb;
+  color: white;
+  font-size: 1.6rem;
+  
+  cursor: pointer;
+}
+
+button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {  
+  .container .content {
+    margin: 3rem 0;
+  }
+  
+  .content .quote-area i {
+    font-size: 1.4rem;
+  }
+
+  .content .quote-area .quote {
+    font-size: 1.8rem;
+  }
+
+  .content .author {
+    font-size: 1.4rem;
+  }
+
+  .features ul li {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .features button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+}
