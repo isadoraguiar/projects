@@ -7,7 +7,7 @@ const twitterBtn = document.querySelector('.twitter')
 
 function randomQuote() {
   quoteBtn.classList.add('loading')
-  quoteBtn.innerText = 'Loading Quote...'
+  quoteBtn.innerText = 'Loading...'
 
   fetch('https://api.quotable.io/random')
     .then(res => res.json())
