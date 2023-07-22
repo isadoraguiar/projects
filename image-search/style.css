@@ -130,6 +130,10 @@ form {
 }
 
 @media (max-width: 480px) {
+  #search-input {
+    border: 1px solid #c2c2c2;
+  }
+  
   .search-result {
     width: 100%;
   }
