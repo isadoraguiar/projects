@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #140f0d;
+    --primary: hsl(172, 64%, 47%);
+    --primary-opaque: hsla(172, 64%, 47%, 0.15);
+    --white: #fbfbfd;
+
+    font-size: 62.5%;
+}
+
+*, button, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--bg);
+    color: var(--white);
+
+    font-size: 1.6rem;
+}
+
+header {
+    margin: 8rem 0 4rem;
+    text-align: center;
+
+    color: var(--primary);
+}
+
+main {
+    margin-inline: auto;
+
+    width: 80vw;
+    max-width: 90rem;
+}
+
+.tag-container {
+    border: 2px solid var(--primary-opaque);
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.tag-container, 
+.tag-container input, 
+.tag-container .tag {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--white);
+}
+
+.tag-container .tag {
+    margin: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-bottom: 0.1rem solid var(--primary);
+
+    font-size: 1.8rem;
+    
+    display: flex;
+    align-items: center;
+    
+    cursor: default;
+}
+
+.tag i {
+    font-size: 1.4rem;
+    font-style: normal;
+
+    margin-left: 0.8rem;
+
+    transform: translateY(1rem);
+}
+
+.close::after {
+    content: "✕";
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.tag-container input {
+    padding: 0.8rem;
+
+    font-size: 1.8rem;
+
+    border: 0;
+    outline: none;
+
+    flex: 1;
+}
+
