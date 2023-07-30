@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a id="logo" href="#">Brand</a>
+
+      <nav id="nav">
+        <button
+          aria-label="Open Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+
+        <ul id="menu" role="menu">
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="./script.js"></script>
+  </body>
+</html>
